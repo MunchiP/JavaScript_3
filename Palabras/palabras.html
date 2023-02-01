@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Palabras</title>
+</head>
+<body>
+
+
+    <div class="cabezote"> 
+        <h1> Diferencia de palabras </h1>
+        <a href="../principal.html"> 
+            <p class="volver"> Devolver </p></a> 
+            <p> Por favor ingrese dos palabras para diferenciar cuál es la más larga y por cuántos caracteres </p>
+    
+            <div oninput="tex1()">
+               Primera Palabra <input type="text" id="text1"> 
+            </div>
+
+            <div oninput="tex2()">
+                Segunda Palabra <input type="text" id="text2"> 
+             </div>
+
+             <div >
+                <button oninput='resultado()'> Diferencia entre palabras</button> 
+                <div class="respuesta" id="res" >  </div>
+             </div>
+             <button onclick="borrar()">Reiniciar</button>
+    </div>
+
+
+
+    <script src="palabras.js">
+
+    </script>
+    
+</body>
+</html>
